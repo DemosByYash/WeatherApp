@@ -1,0 +1,68 @@
+﻿/* General layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Weather widget container */
+.widget {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Weather card */
+.widget-item {
+    width: 180px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+    .widget-item:hover {
+        transform: scale(1.05);
+    }
+
+    /* Temperature-based colors */
+    .widget-item.cold {
+        background: #4A90E2; /* Blue */
+    }
+
+    .widget-item.cool {
+        background: #50E3C2; /* Teal */
+    }
+
+    .widget-item.mild {
+        background: #F5A623; /* Orange */
+    }
+
+    .widget-item.hot {
+        background: #D0021B; /* Red */
+    }
+
+    /* Text styles */
+    .widget-item p {
+        margin: 8px 0;
+        font-size: 16px;
+    }
+
+    .widget-item a {
+        color: #fff;
+        text-decoration: underline;
+    }
